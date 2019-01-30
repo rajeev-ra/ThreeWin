@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\cameras\Camera.cpp" />
+    <ClCompile Include="..\src\cameras\CubeCamera.cpp" />
+    <ClCompile Include="..\src\cameras\OrthographicCamera.cpp" />
+    <ClCompile Include="..\src\cameras\PerspectiveCamera.cpp" />
+    <ClCompile Include="..\src\core\Face3.cpp" />
+    <ClCompile Include="..\src\core\Geometry.cpp" />
+    <ClCompile Include="..\src\core\Object3D.cpp" />
+    <ClCompile Include="..\src\geometries\BoxGeometry.cpp" />
+    <ClCompile Include="..\src\geometries\CircleGeometry.cpp" />
+    <ClCompile Include="..\src\geometries\ConeGeometry.cpp" />
+    <ClCompile Include="..\src\geometries\Geometries.cpp" />
+    <ClCompile Include="..\src\geometries\PlaneGeometry.cpp" />
+    <ClCompile Include="..\src\geometries\SphereGeometry.cpp" />
+    <ClCompile Include="..\src\lights\AmbientLight.cpp" />
+    <ClCompile Include="..\src\lights\Light.cpp" />
+    <ClCompile Include="..\src\materials\Material.cpp" />
+    <ClCompile Include="..\src\materials\Materials.cpp" />
+    <ClCompile Include="..\src\materials\MeshBasicMaterial.cpp" />
+    <ClCompile Include="..\src\materials\MeshLambertMaterial.cpp" />
+    <ClCompile Include="..\src\math\Euler.cpp" />
+    <ClCompile Include="..\src\math\math.cpp" />
+    <ClCompile Include="..\src\math\Matrix3.cpp" />
+    <ClCompile Include="..\src\math\Matrix4.cpp" />
+    <ClCompile Include="..\src\math\Quaternion.cpp" />
+    <ClCompile Include="..\src\math\Vector3.cpp" />
+    <ClCompile Include="..\src\objects\Line.cpp" />
+    <ClCompile Include="..\src\objects\Mesh.cpp" />
+    <ClCompile Include="..\src\objects\Point.cpp" />
+    <ClCompile Include="..\src\renderers\OpenGLRenderer.cpp" />
+    <ClCompile Include="..\src\scenes\Scene.cpp" />
+    <ClCompile Include="..\src\stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\cameras\Camera.h" />
+    <ClInclude Include="..\src\cameras\CubeCamera.h" />
+    <ClInclude Include="..\src\cameras\OrthographicCamera.h" />
+    <ClInclude Include="..\src\cameras\PerspectiveCamera.h" />
+    <ClInclude Include="..\src\core\Face3.h" />
+    <ClInclude Include="..\src\core\Geometry.h" />
+    <ClInclude Include="..\src\core\Object3D.h" />
+    <ClInclude Include="..\src\geometries\BoxGeometry.h" />
+    <ClInclude Include="..\src\geometries\CircleGeometry.h" />
+    <ClInclude Include="..\src\geometries\ConeGeometry.h" />
+    <ClInclude Include="..\src\geometries\Geometries.h" />
+    <ClInclude Include="..\src\geometries\PlaneGeometry.h" />
+    <ClInclude Include="..\src\geometries\SphereGeometry.h" />
+    <ClInclude Include="..\src\lights\AmbientLight.h" />
+    <ClInclude Include="..\src\lights\Light.h" />
+    <ClInclude Include="..\src\materials\Material.h" />
+    <ClInclude Include="..\src\materials\Materials.h" />
+    <ClInclude Include="..\src\materials\MeshBasicMaterial.h" />
+    <ClInclude Include="..\src\materials\MeshLambertMaterial.h" />
+    <ClInclude Include="..\src\math\Euler.h" />
+    <ClInclude Include="..\src\math\math.h" />
+    <ClInclude Include="..\src\math\Matrix3.h" />
+    <ClInclude Include="..\src\math\Matrix4.h" />
+    <ClInclude Include="..\src\math\Quaternion.h" />
+    <ClInclude Include="..\src\math\Vector3.h" />
+    <ClInclude Include="..\src\objects\Line.h" />
+    <ClInclude Include="..\src\objects\Mesh.h" />
+    <ClInclude Include="..\src\objects\Point.h" />
+    <ClInclude Include="..\src\renderers\OpenGLRenderer.h" />
+    <ClInclude Include="..\src\scenes\Scene.h" />
+    <ClInclude Include="..\src\stdafx.h" />
+    <ClInclude Include="..\src\ThreeInclude.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6E106C09-0789-4B68-9270-1D094F0B3604}</ProjectGuid>
+    <RootNamespace>ThreeWin</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>THREE_WIN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AdditionalIncludeDirectories>.\..\src</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>THREE_WIN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AdditionalIncludeDirectories>.\..\src</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>THREE_WIN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AdditionalIncludeDirectories>.\..\src</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>THREE_WIN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AdditionalIncludeDirectories>.\..\src</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

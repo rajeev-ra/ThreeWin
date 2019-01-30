@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\renderers">
+      <UniqueIdentifier>{09f9b944-6040-4cfb-a16e-5891ad861756}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\math">
+      <UniqueIdentifier>{cf779052-ba67-4dbb-bc0d-ea43b759880c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cameras">
+      <UniqueIdentifier>{4160f550-201c-4b13-821e-59e6e6fadad7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\core">
+      <UniqueIdentifier>{92d8da9e-3bbc-4607-b579-4633b11adf57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\geometries">
+      <UniqueIdentifier>{37b30106-df89-45c0-bc5b-251d63a4ead4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\helpers">
+      <UniqueIdentifier>{7020b982-5e8b-4193-8055-e29ba1bac991}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lights">
+      <UniqueIdentifier>{efe6a19b-3a55-4623-98d3-c9879777231d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\materials">
+      <UniqueIdentifier>{4633dca4-4b30-4083-a5c1-99bcb4e8d3df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\objects">
+      <UniqueIdentifier>{63e67be9-bccb-4470-b11b-38bf06e9795f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scenes">
+      <UniqueIdentifier>{bb7c1d11-9587-4c84-8c7a-c30cdb46c6ba}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\OpenGLRenderer.cpp">
+      <Filter>Source Files\renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\math\math.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\math\Matrix3.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\math\Vector3.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\math\Matrix4.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\math\Euler.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\math\Quaternion.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cameras\Camera.cpp">
+      <Filter>Source Files\cameras</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cameras\CubeCamera.cpp">
+      <Filter>Source Files\cameras</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cameras\OrthographicCamera.cpp">
+      <Filter>Source Files\cameras</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cameras\PerspectiveCamera.cpp">
+      <Filter>Source Files\cameras</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\Face3.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\Geometry.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\Object3D.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\geometries\BoxGeometry.cpp">
+      <Filter>Source Files\geometries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\geometries\CircleGeometry.cpp">
+      <Filter>Source Files\geometries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\geometries\ConeGeometry.cpp">
+      <Filter>Source Files\geometries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\geometries\Geometries.cpp">
+      <Filter>Source Files\geometries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\geometries\PlaneGeometry.cpp">
+      <Filter>Source Files\geometries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\geometries\SphereGeometry.cpp">
+      <Filter>Source Files\geometries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\lights\AmbientLight.cpp">
+      <Filter>Source Files\lights</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\lights\Light.cpp">
+      <Filter>Source Files\lights</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\materials\Material.cpp">
+      <Filter>Source Files\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\materials\Materials.cpp">
+      <Filter>Source Files\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\materials\MeshBasicMaterial.cpp">
+      <Filter>Source Files\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\materials\MeshLambertMaterial.cpp">
+      <Filter>Source Files\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\objects\Line.cpp">
+      <Filter>Source Files\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\objects\Mesh.cpp">
+      <Filter>Source Files\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\objects\Point.cpp">
+      <Filter>Source Files\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\scenes\Scene.cpp">
+      <Filter>Source Files\scenes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ThreeInclude.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderers\OpenGLRenderer.h">
+      <Filter>Source Files\renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\math\math.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\math\Matrix3.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\math\Vector3.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\math\Matrix4.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\math\Euler.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\math\Quaternion.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cameras\Camera.h">
+      <Filter>Source Files\cameras</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cameras\CubeCamera.h">
+      <Filter>Source Files\cameras</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cameras\OrthographicCamera.h">
+      <Filter>Source Files\cameras</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cameras\PerspectiveCamera.h">
+      <Filter>Source Files\cameras</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Face3.h">
+      <Filter>Source Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Geometry.h">
+      <Filter>Source Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Object3D.h">
+      <Filter>Source Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\geometries\BoxGeometry.h">
+      <Filter>Source Files\geometries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\geometries\CircleGeometry.h">
+      <Filter>Source Files\geometries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\geometries\ConeGeometry.h">
+      <Filter>Source Files\geometries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\geometries\Geometries.h">
+      <Filter>Source Files\geometries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\geometries\PlaneGeometry.h">
+      <Filter>Source Files\geometries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\geometries\SphereGeometry.h">
+      <Filter>Source Files\geometries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lights\AmbientLight.h">
+      <Filter>Source Files\lights</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lights\Light.h">
+      <Filter>Source Files\lights</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\materials\Material.h">
+      <Filter>Source Files\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\materials\Materials.h">
+      <Filter>Source Files\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\materials\MeshBasicMaterial.h">
+      <Filter>Source Files\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\materials\MeshLambertMaterial.h">
+      <Filter>Source Files\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\objects\Line.h">
+      <Filter>Source Files\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\objects\Mesh.h">
+      <Filter>Source Files\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\objects\Point.h">
+      <Filter>Source Files\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\scenes\Scene.h">
+      <Filter>Source Files\scenes</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
