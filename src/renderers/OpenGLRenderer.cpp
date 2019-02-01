@@ -157,3 +157,13 @@ BOOL THREE::OpenGLRenderer::InitGL()
 
 	m_hRC = wglCreateContext(m_hDC);
 }
+
+namespace THREE
+{
+	void OpenGLRenderer::render(Scene& scene, Camera& camera)
+	{
+		scene.onBeforeRender(*this, scene, camera);
+		m_projScreenMatrix = camera.GetProjectionMatrix() * camera.GetMatrixWorldInverse();
+
+	}
+}

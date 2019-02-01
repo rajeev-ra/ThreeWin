@@ -13,6 +13,7 @@ namespace THREE
 		HWND GetParent();
 		void Resize();
 		void Render();
+		void render(Scene& scene, Camera& camera);
 
 	private:
 		BOOL InitGL();
@@ -22,5 +23,11 @@ namespace THREE
 		HWND m_parent;
 		HDC m_hDC;
 		HGLRC m_hRC;
+
+	private:
+		Matrix4 m_projScreenMatrix;
+		Vector4 m_currentViewport;
+		Vector4	m_currentScissor;
+		Frustrum m_frustum;
 	};
 }

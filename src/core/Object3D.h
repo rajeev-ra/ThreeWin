@@ -2,15 +2,26 @@
 
 namespace THREE
 {
+	class OpenGLRenderer;
 	class Object3D
 	{
 	public:
+		enum ObjectType
+		{
+			eCamera_Perspective,
+			eCamera_Orthographic,
+			eCamera_Cube,
+			eScene
+		};
+
 	public:
-		Object3D();
+	public:
+		Object3D(const ObjectType& type);
 		Object3D(const Object3D& obj);
 		~Object3D();
 
 	public:
+		virtual ObjectType& Type() const = 0;
 		Object3D& applyMatrix(const Matrix4& matrix);
 		Object3D& applyQuaternion(const Quaternion& q);
 		Object3D& setRotationFromAxisAngle(const Vector3& axis, const float& angle);
@@ -34,7 +45,15 @@ namespace THREE
 		Object3D& getObjectById(const char* id);
 		Object3D& operator=(Object3D& obj) const;
 
-	private:
+		void onBeforeRender(OpenGLRenderer& renderer, const Object3D& scene, const Object3D& camera);
 
+		Matrix4& GetMatrix();
+		Matrix4& GetMatrixWorld();
+
+
+	private:
+		ObjectType m_type;
+		Matrix4 m_matrix;
+		Matrix4 m_matrixWorld;
 	};
 }

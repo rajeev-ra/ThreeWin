@@ -5,6 +5,7 @@ namespace THREE
 	class THREEDLL Matrix4
 	{
 	public:
+		static Matrix4 multiplyMatrices(const Matrix4& a, const Matrix4& b);
 
 	public:
 		Matrix4();
@@ -25,7 +26,9 @@ namespace THREE
 
 		void copyPosition(const Matrix4& m);
 
+		Matrix4& operator=(const Matrix4& m);
 
+		Matrix4 operator*(const Matrix4& m);
 
 	private:
 		float m_e[16];

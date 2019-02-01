@@ -6,7 +6,7 @@ namespace THREE
 	{
 	public:
 	public:
-		Mesh(const Geometry *pGeom = nullptr, const Material* pMat = nullptr);
+		Mesh(const Geometry& geom, const Material& mat);
 		Mesh(const Mesh& mesh);
 		~Mesh();
 

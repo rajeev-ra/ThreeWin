@@ -43,6 +43,9 @@
     <Filter Include="Source Files\scenes">
       <UniqueIdentifier>{bb7c1d11-9587-4c84-8c7a-c30cdb46c6ba}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\renderers\opengl">
+      <UniqueIdentifier>{3add7a25-dda8-45d2-b78e-1c798bdc835e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\stdafx.cpp">
@@ -137,6 +140,45 @@
     </ClCompile>
     <ClCompile Include="..\src\scenes\Scene.cpp">
       <Filter>Source Files\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\OpenGLWinRenderer.cpp">
+      <Filter>Source Files\renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\math\Color.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\math\Frustrum.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\math\Line3.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\math\Plane.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\math\Ray.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\math\Triangle.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\math\Vector4.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\opengl\OpenGLBufferRenderer.cpp">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\opengl\OpenGLGeometries.cpp">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\opengl\OpenGLIndexedBufferRenderer.cpp">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\opengl\OpenGLProgram.cpp">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\opengl\OpenGLShadowMap.cpp">
+      <Filter>Source Files\renderers\opengl</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -235,6 +277,45 @@
     </ClInclude>
     <ClInclude Include="..\src\scenes\Scene.h">
       <Filter>Source Files\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderers\OpenGLWinRenderer.h">
+      <Filter>Source Files\renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\math\Color.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\math\Frustrum.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\math\Line3.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\math\Plane.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\math\Ray.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\math\Triangle.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\math\Vector4.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderers\opengl\OpenGLBufferRenderer.h">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderers\opengl\OpenGLGeometries.h">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderers\opengl\OpenGLIndexedBufferRenderer.h">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderers\opengl\OpenGLProgram.h">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderers\opengl\OpenGLShadowMap.h">
+      <Filter>Source Files\renderers\opengl</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
