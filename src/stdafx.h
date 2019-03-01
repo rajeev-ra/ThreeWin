@@ -5,7 +5,9 @@
 #include <gl\GLU.h>
 
 #include <map>
+#include <string>
 #include <math.h>
+#include <vector>
 
 
 

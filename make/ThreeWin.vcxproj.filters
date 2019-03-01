@@ -46,6 +46,18 @@
     <Filter Include="Source Files\renderers\opengl">
       <UniqueIdentifier>{3add7a25-dda8-45d2-b78e-1c798bdc835e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\renderers\shaders">
+      <UniqueIdentifier>{1858486a-87ac-4cb8-b87c-a89ee7461164}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\renderers\shaders\ShaderChunk">
+      <UniqueIdentifier>{594537bf-caed-44bc-8114-cfdd7cf6a592}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\renderers\shaders\ShaderLib">
+      <UniqueIdentifier>{e782bfac-b6c3-4dc2-a08f-5efff006cb95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\math\interpolants">
+      <UniqueIdentifier>{ad7b5947-d44a-4aed-9737-5c09ac18f5c3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\stdafx.cpp">
@@ -179,6 +191,600 @@
     </ClCompile>
     <ClCompile Include="..\src\renderers\opengl\OpenGLShadowMap.cpp">
       <Filter>Source Files\renderers\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk.cpp">
+      <Filter>Source Files\renderers\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderLib.cpp">
+      <Filter>Source Files\renderers\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\UniformsLib.cpp">
+      <Filter>Source Files\renderers\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\UniformsUtils.cpp">
+      <Filter>Source Files\renderers\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderLib\background_frag.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderLib\background_vert.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderLib\cube_frag.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderLib\cube_vert.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderLib\depth_frag.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderLib\depth_vert.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderLib\distanceRGBA_frag.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderLib\distanceRGBA_vert.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderLib\equirect_frag.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderLib\equirect_vert.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderLib\linedashed_frag.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderLib\linedashed_vert.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderLib\meshbasic_frag.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderLib\meshbasic_vert.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderLib\meshlambert_frag.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderLib\meshlambert_vert.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderLib\meshmatcap_frag.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderLib\meshmatcap_vert.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderLib\meshphong_frag.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderLib\meshphong_vert.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderLib\meshphysical_frag.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderLib\meshphysical_vert.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderLib\normal_frag.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderLib\normal_vert.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderLib\points_frag.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderLib\points_vert.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderLib\shadow_frag.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderLib\shadow_vert.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderLib\sprite_frag.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderLib\sprite_vert.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\alphamap_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\alphamap_pars_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\alphatest_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\aomap_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\aomap_pars_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\begin_vertex.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\beginnormal_vertex.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\bsdfs.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\bumpmap_pars_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\clipping_planes_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\clipping_planes_pars_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\clipping_planes_pars_vertex.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\clipping_planes_vertex.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\color_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\color_pars_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\color_pars_vertex.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\color_vertex.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\common.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\cube_uv_reflection_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\defaultnormal_vertex.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\displacementmap_pars_vertex.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\displacementmap_vertex.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\dithering_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\dithering_pars_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\emissivemap_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\emissivemap_pars_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\encodings_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\encodings_pars_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\envmap_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\envmap_pars_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\envmap_pars_vertex.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\envmap_physical_pars_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\envmap_vertex.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\fog_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\fog_pars_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\fog_pars_vertex.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\fog_vertex.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\gradientmap_pars_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\lightmap_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\lightmap_pars_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\lights_fragment_begin.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\lights_fragment_end.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\lights_fragment_maps.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\lights_lambert_vertex.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\lights_pars_begin.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\lights_phong_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\lights_phong_pars_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\lights_physical_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\lights_physical_pars_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\logdepthbuf_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\logdepthbuf_pars_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\logdepthbuf_pars_vertex.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\logdepthbuf_vertex.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\map_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\map_pars_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\map_particle_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\map_particle_pars_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\metalnessmap_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\metalnessmap_pars_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\morphnormal_vertex.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\morphtarget_pars_vertex.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\morphtarget_vertex.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\normal_fragment_begin.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\normal_fragment_maps.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\normalmap_pars_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\packing.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\premultiplied_alpha_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\project_vertex.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\roughnessmap_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\roughnessmap_pars_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\shadowmap_pars_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\shadowmap_pars_vertex.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\shadowmap_vertex.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\shadowmask_pars_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\skinbase_vertex.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\skinning_pars_vertex.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\skinning_vertex.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\skinnormal_vertex.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\specularmap_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\specularmap_pars_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\tonemapping_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\tonemapping_pars_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\uv_pars_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\uv_pars_vertex.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\uv_vertex.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\uv2_pars_fragment.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\uv2_pars_vertex.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\uv2_vertex.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\shaders\ShaderChunk\worldpos_vertex.glsl.cpp">
+      <Filter>Source Files\renderers\shaders\ShaderChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\opengl\OpenGLAnimation.cpp">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\opengl\OpenGLAttributes.cpp">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\opengl\OpenGLBackground.cpp">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\opengl\OpenGLCapabilities.cpp">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\opengl\OpenGLClipping.cpp">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\opengl\OpenGLExtensions.cpp">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\opengl\OpenGLInfo.cpp">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\opengl\OpenGLLights.cpp">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\opengl\OpenGLMorphtargets.cpp">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\opengl\OpenGLObjects.cpp">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\opengl\OpenGLPrograms.cpp">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\opengl\OpenGLProperties.cpp">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\opengl\OpenGLRenderList.cpp">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\opengl\OpenGLRenderStates.cpp">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\opengl\OpenGLShader.cpp">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\opengl\OpenGLState.cpp">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\opengl\OpenGLTextures.cpp">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\opengl\OpenGLUniforms.cpp">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\opengl\OpenGLUtils.cpp">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\math\interpolants\CubicInterpolant.cpp">
+      <Filter>Source Files\math\interpolants</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\math\interpolants\DiscreteInterpolant.cpp">
+      <Filter>Source Files\math\interpolants</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\math\interpolants\LinearInterpolant.cpp">
+      <Filter>Source Files\math\interpolants</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\math\interpolants\QuaternionLinearInterpolant.cpp">
+      <Filter>Source Files\math\interpolants</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\math\Box2.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\math\Box3.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\math\Cylindrical.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\math\Interpolant.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\math\Sphere.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\math\Spherical.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\math\Vector2.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderers\opengl\OpenGL.cpp">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Constants.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\materials\LineBasicMaterial.cpp">
+      <Filter>Source Files\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\materials\LineDashedMaterial.cpp">
+      <Filter>Source Files\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\materials\MeshDepthMaterial.cpp">
+      <Filter>Source Files\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\materials\MeshDistanceMaterial.cpp">
+      <Filter>Source Files\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\materials\MeshMatcapMaterial.cpp">
+      <Filter>Source Files\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\materials\MeshNormalMaterial.cpp">
+      <Filter>Source Files\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\materials\MeshPhongMaterial.cpp">
+      <Filter>Source Files\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\materials\MeshPhysicalMaterial.cpp">
+      <Filter>Source Files\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\materials\MeshStandardMaterial.cpp">
+      <Filter>Source Files\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\materials\MeshToonMaterial.cpp">
+      <Filter>Source Files\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\materials\PointsMaterial.cpp">
+      <Filter>Source Files\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\materials\RawShaderMaterial.cpp">
+      <Filter>Source Files\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\materials\ShaderMaterial.cpp">
+      <Filter>Source Files\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\materials\ShadowMaterial.cpp">
+      <Filter>Source Files\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\materials\SpriteMaterial.cpp">
+      <Filter>Source Files\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\BufferAttribute.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\BufferGeometry.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\Clock.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\DirectGeometry.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\InstancedBufferAttribute.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\InstancedBufferGeometry.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\InstancedInterleavedBuffer.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\InterleavedBuffer.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\InterleavedBufferAttribute.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\Layers.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\Raycaster.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\Uniform.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\geometries\CylinderGeometry.cpp">
+      <Filter>Source Files\geometries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\geometries\DodecahedronGeometry.cpp">
+      <Filter>Source Files\geometries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\geometries\EdgesGeometry.cpp">
+      <Filter>Source Files\geometries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\geometries\ExtrudeGeometry.cpp">
+      <Filter>Source Files\geometries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\geometries\IcosahedronGeometry.cpp">
+      <Filter>Source Files\geometries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\geometries\LatheGeometry.cpp">
+      <Filter>Source Files\geometries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\geometries\OctahedronGeometry.cpp">
+      <Filter>Source Files\geometries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\geometries\ParametricGeometry.cpp">
+      <Filter>Source Files\geometries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\geometries\PolyhedronGeometry.cpp">
+      <Filter>Source Files\geometries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\geometries\RingGeometry.cpp">
+      <Filter>Source Files\geometries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\geometries\ShapeGeometry.cpp">
+      <Filter>Source Files\geometries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\geometries\TetrahedronGeometry.cpp">
+      <Filter>Source Files\geometries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\geometries\TorusGeometry.cpp">
+      <Filter>Source Files\geometries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\geometries\TorusKnotGeometry.cpp">
+      <Filter>Source Files\geometries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\geometries\TubeGeometry.cpp">
+      <Filter>Source Files\geometries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\geometries\WireframeGeometry.cpp">
+      <Filter>Source Files\geometries</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -316,6 +922,243 @@
     </ClInclude>
     <ClInclude Include="..\src\renderers\opengl\OpenGLShadowMap.h">
       <Filter>Source Files\renderers\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderers\shaders\ShaderChunk.h">
+      <Filter>Source Files\renderers\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderers\shaders\ShaderLib.h">
+      <Filter>Source Files\renderers\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderers\shaders\UniformsLib.h">
+      <Filter>Source Files\renderers\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderers\shaders\UniformsUtils.h">
+      <Filter>Source Files\renderers\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderers\opengl\OpenGLAnimation.h">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderers\opengl\OpenGLAttributes.h">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderers\opengl\OpenGLBackground.h">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderers\opengl\OpenGLCapabilities.h">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderers\opengl\OpenGLClipping.h">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderers\opengl\OpenGLExtensions.h">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderers\opengl\OpenGLInfo.h">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderers\opengl\OpenGLLights.h">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderers\opengl\OpenGLMorphtargets.h">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderers\opengl\OpenGLObjects.h">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderers\opengl\OpenGLPrograms.h">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderers\opengl\OpenGLProperties.h">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderers\opengl\OpenGLRenderList.h">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderers\opengl\OpenGLRenderStates.h">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderers\opengl\OpenGLShader.h">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderers\opengl\OpenGLState.h">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderers\opengl\OpenGLTextures.h">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderers\opengl\OpenGLUniforms.h">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderers\opengl\OpenGLUtils.h">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\math\interpolants\CubicInterpolant.h">
+      <Filter>Source Files\math\interpolants</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\math\interpolants\DiscreteInterpolant.h">
+      <Filter>Source Files\math\interpolants</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\math\interpolants\LinearInterpolant.h">
+      <Filter>Source Files\math\interpolants</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\math\interpolants\QuaternionLinearInterpolant.h">
+      <Filter>Source Files\math\interpolants</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\math\Box2.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\math\Box3.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\math\Cylindrical.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\math\Interpolant.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\math\Sphere.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\math\Spherical.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\math\Vector2.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderers\opengl\OpenGL.h">
+      <Filter>Source Files\renderers\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Constants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\materials\LineBasicMaterial.h">
+      <Filter>Source Files\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\materials\LineDashedMaterial.h">
+      <Filter>Source Files\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\materials\MeshDepthMaterial.h">
+      <Filter>Source Files\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\materials\MeshDistanceMaterial.h">
+      <Filter>Source Files\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\materials\MeshMatcapMaterial.h">
+      <Filter>Source Files\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\materials\MeshNormalMaterial.h">
+      <Filter>Source Files\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\materials\MeshPhongMaterial.h">
+      <Filter>Source Files\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\materials\MeshPhysicalMaterial.h">
+      <Filter>Source Files\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\materials\MeshStandardMaterial.h">
+      <Filter>Source Files\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\materials\MeshToonMaterial.h">
+      <Filter>Source Files\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\materials\PointsMaterial.h">
+      <Filter>Source Files\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\materials\RawShaderMaterial.h">
+      <Filter>Source Files\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\materials\ShaderMaterial.h">
+      <Filter>Source Files\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\materials\ShadowMaterial.h">
+      <Filter>Source Files\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\materials\SpriteMaterial.h">
+      <Filter>Source Files\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\BufferAttribute.h">
+      <Filter>Source Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\BufferGeometry.h">
+      <Filter>Source Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Clock.h">
+      <Filter>Source Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\DirectGeometry.h">
+      <Filter>Source Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\InstancedBufferAttribute.h">
+      <Filter>Source Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\InstancedBufferGeometry.h">
+      <Filter>Source Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\InstancedInterleavedBuffer.h">
+      <Filter>Source Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\InterleavedBuffer.h">
+      <Filter>Source Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\InterleavedBufferAttribute.h">
+      <Filter>Source Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Layers.h">
+      <Filter>Source Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Raycaster.h">
+      <Filter>Source Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Uniform.h">
+      <Filter>Source Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\geometries\CylinderGeometry.h">
+      <Filter>Source Files\geometries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\geometries\DodecahedronGeometry.h">
+      <Filter>Source Files\geometries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\geometries\EdgesGeometry.h">
+      <Filter>Source Files\geometries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\geometries\ExtrudeGeometry.h">
+      <Filter>Source Files\geometries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\geometries\IcosahedronGeometry.h">
+      <Filter>Source Files\geometries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\geometries\LatheGeometry.h">
+      <Filter>Source Files\geometries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\geometries\OctahedronGeometry.h">
+      <Filter>Source Files\geometries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\geometries\ParametricGeometry.h">
+      <Filter>Source Files\geometries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\geometries\PolyhedronGeometry.h">
+      <Filter>Source Files\geometries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\geometries\RingGeometry.h">
+      <Filter>Source Files\geometries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\geometries\ShapeGeometry.h">
+      <Filter>Source Files\geometries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\geometries\TetrahedronGeometry.h">
+      <Filter>Source Files\geometries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\geometries\TorusGeometry.h">
+      <Filter>Source Files\geometries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\geometries\TorusKnotGeometry.h">
+      <Filter>Source Files\geometries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\geometries\TubeGeometry.h">
+      <Filter>Source Files\geometries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\geometries\WireframeGeometry.h">
+      <Filter>Source Files\geometries</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
